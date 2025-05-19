@@ -73,7 +73,7 @@ body {
   border-radius: 8px;
   /* optional: force section to at least 300px tall */
   min-height: 300px;
-  color: #fff;
+  color: #000;
 }
 .bg-activities h2,
 .bg-activities li {
