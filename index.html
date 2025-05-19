@@ -3,139 +3,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yixin Chen – Personal Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Yixin Chen</h1>
-    <p class="subtitle">Master’s Student in Physics of Life</p>
-    <p class="contact">
-      <span>📍 Biozentrum, University of Basel</span> |
-      <span>📞 +41 78 337 2345</span> |
-      <span>✉️ <a href="mailto:yixin.chen@stud.unibas.ch">yixin.chen@stud.unibas.ch</a></span>
-    </p>
-    <hr>
-  </header>
-
-  <main>
-    <!-- Education -->
-    <section id="education">
-      <h2>Education</h2>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
       <ul>
-        <li><strong>2023–2026 (expected)</strong> – M.Sc. in Physics of Life, University of Basel, Switzerland</li>
-        <li><strong>2023</strong> – B.Sc. in Physics, Jilin University (Project 985), Changchun, China</li>
-        <li><strong>2023</strong> – B.Sc. in Physics, Tomsk Polytechnic University, Tomsk, Russia</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#activities">Recent Activities</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="Yixin_Chen_CV.pdf" target="_blank">Download CV</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Programming:</strong> MATLAB, Python, C</li>
-        <li><strong>Tools:</strong> LaTeX, Microsoft Office, SolidWorks</li>
-      </ul>
-    </section>
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Home / Intro -->
+      <section id="home">
+        <h1>Hello, I’m Yixin Chen</h1>
+        <p>I’m currently pursuing an M.Sc. in Physics of Life at the University of Basel, where I model biologically inspired neural networks and develop novel online learning algorithms. I love combining theory, simulation and data analysis to uncover how the brain encodes space and time.</p>
+      </section>
 
-    <!-- Research Experience -->
-    <section id="research">
-      <h2>Research Experience</h2>
-
-      <article>
-        <h3>Oct 2024–May 2025 (expected)</h3>
-        <p class="role">
-          Research Project: Exploring spatial memory formation through biologically plausible spiking neural networks with online learning algorithms<br>
-          <em>Computational Neuroscience Group, Biozentrum, University of Basel</em>
-        </p>
+      <!-- Recent Activities -->
+      <section id="activities">
+        <h2>Recent Activities</h2>
         <ul>
-          <li>Modeled feedforward and recurrent spiking neural networks in an agent navigating a 2D simulated environment.</li>
-          <li>Investigated the emergence of grid-cell-like activity from place cells via synaptic plasticity rules.</li>
-          <li>Applied PCA and Fourier analysis to characterize dynamics between place and grid cells.</li>
-          <li>Implemented simulations and data analysis in C and Python.</li>
+          <li><strong>Oct 2024–May 2025</strong> – Research Project on spatial memory formation in spiking neural networks at Biozentrum, University of Basel.</li>
+          <li><strong>Feb 2025–Aug 2025</strong> – Research Internship in brain-inspired learning for RNNs, Automation Institute (CAS), Beijing.</li>
         </ul>
-      </article>
+      </section>
 
-      <article>
-        <h3>Feb 2025–Aug 2025 (expected)</h3>
-        <p class="role">
-          Research Intern: Brain-Inspired Learning in RNNs<br>
-          <em>Automation Institute (Guoqi Li Group), Chinese Academy of Sciences, Beijing</em>
-        </p>
+      <!-- Education -->
+      <section id="education">
+        <h2>Education</h2>
         <ul>
-          <li>Developed local learning update rules integrated into linear attention mechanisms within RNNs.</li>
-          <li>Implemented a context-dependent linear attention module for dynamic focus adjustment.</li>
-          <li>Evaluated performance on synthetic time-series and real-world datasets.</li>
-          <li>Benchmarking against global backpropagation baselines.</li>
+          <li><strong>2023–2026 (expected)</strong> M.Sc. in Physics of Life, University of Basel, Switzerland</li>
+          <li><strong>2023</strong> B.Sc. in Physics, Jilin University (Project 985), Changchun, China</li>
+          <li><strong>2023</strong> B.Sc. in Physics, Tomsk Polytechnic University, Tomsk, Russia</li>
         </ul>
-      </article>
+      </section>
 
-      <article>
-        <h3>Dec 2023–Jul 2024</h3>
-        <p class="role">
-          Research Assistant: Large-Field-of-View Light-Field Microscopy<br>
-          <em>Biomedical Photonics Lab, Tsinghua University, Beijing</em>
-        </p>
-        <ul>
-          <li>Developed computational imaging pipelines for extended field-of-view light-field microscopy.</li>
-          <li>Implemented 3D reconstruction algorithms and post-processing workflows.</li>
-          <li>Optimized MATLAB scripts for high-performance volumetric data processing.</li>
-          <li>Collaborated with experimental teams to validate models with microscopy data.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Sep 2024–Jun 2025 (expected)</h3>
-        <p class="role">
-          Remote Research Assistant: Bio-Inspired Algorithms<br>
-          <em>Computer Science Dept., University of Birmingham, UK</em>
-        </p>
-        <ul>
-          <li>Designed algorithms combining evolutionary computation and reinforcement learning.</li>
-          <li>Developed novel fitness evaluation and policy update mechanisms.</li>
-          <li>Prototyped in Python using standard ML libraries and custom frameworks.</li>
-          <li>Conducted performance benchmarks on synthetic and real datasets.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>May 2021–May 2022</h3>
-        <p class="role">
-          Research Intern: Second Harmonic Generation in Graphene<br>
-          <em>CIOMP, Chinese Academy of Sciences, Changchun</em>
-        </p>
-        <ul>
-          <li>Co-first author on “Study on the second harmonic generation mechanism in few-layer graphene.”</li>
-          <li>Performed first-principles electronic structure calculations of bilayer and trilayer graphene.</li>
-          <li>Analyzed band structures, conductivity orders, and polarization parameters.</li>
-          <li>Wrote MATLAB code to process and visualize nonlinear optical response data.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Awards -->
-    <section id="awards">
-      <h2>Awards</h2>
-      <ul>
-        <li>2019–2020 – Jilin University Scholarship</li>
-        <li>2022 – Innovation & Practice Training Program Award, University of Chinese Academy of Sciences</li>
-      </ul>
-    </section>
-
-    <!-- References -->
-    <section id="references">
-      <h2>References</h2>
-      <ul>
-        <li>Prof. Lingjie Kong – Supervisor, Biomedical Photonics Lab, Tsinghua University | <a href="mailto:KONGLJ@tsinghua.edu.cn">KONGLJ@tsinghua.edu.cn</a></li>
-        <li>Prof. Jinluo Cheng – Supervisor, CIOMP, Chinese Academy of Sciences | <a href="mailto:jlcheng@ciomp.ac.cn">jlcheng@ciomp.ac.cn</a></li>
-        <li>Dr. Everton Joao Agnes – Project Leader, Computational Neuroscience Group, University of Basel | <a href="mailto:everton.agnes@unibas.ch">everton.agnes@unibas.ch</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Yixin Chen</p>
-  </footer>
+      <!-- Experience -->
+      <section id="experience">
+        <h2>Research Experience</h2>
+        <!-- you can paste any of the <article> blocks from before here -->
+        <article>
+          <h3>Dec 2023–Jul 2024</h3>
+          <p class="role">Research Assistant, Large-Field-of-View Light-Field Microscopy<br>
+            <em>Biomedical Photonics Lab, Tsinghua University</em>
+          </p>
+          <ul>
+            <li>Developed computational imaging pipelines for extended FOV light-field microscopy.</li>
+            <li>Implemented 3D reconstruction algorithms and optimized MATLAB scripts for large volumetric datasets.</li>
+            <li>Collaborated with experimentalists to validate imaging models against real microscopy data.</li>
+          </ul>
+        </article>
+        <!-- add other articles similarly… -->
+      </section>
+    </main>
+  </div>
 </body>
 </html>
