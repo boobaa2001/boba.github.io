@@ -1,31 +1,141 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页</title>
+  <title>Yixin Chen – Personal Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>你好，我是 Alice</h1>
-    <p>欢迎来到我的个人网站！</p>
+    <h1>Yixin Chen</h1>
+    <p class="subtitle">Master’s Student in Physics of Life</p>
+    <p class="contact">
+      <span>📍 Biozentrum, University of Basel</span> |
+      <span>📞 +41 78 337 2345</span> |
+      <span>✉️ <a href="mailto:yixin.chen@stud.unibas.ch">yixin.chen@stud.unibas.ch</a></span>
+    </p>
+    <hr>
   </header>
+
   <main>
-    <section>
-      <h2>关于我</h2>
-      <p>这里可以写一些自我介绍、教育背景、工作经历等。</p>
-    </section>
-    <section>
-      <h2>我的项目</h2>
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
       <ul>
-        <li><a href="#">项目 A</a></li>
-        <li><a href="#">项目 B</a></li>
+        <li><strong>2023–2026 (expected)</strong> – M.Sc. in Physics of Life, University of Basel, Switzerland</li>
+        <li><strong>2023</strong> – B.Sc. in Physics, Jilin University (Project 985), Changchun, China</li>
+        <li><strong>2023</strong> – B.Sc. in Physics, Tomsk Polytechnic University, Tomsk, Russia</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Programming:</strong> MATLAB, Python, C</li>
+        <li><strong>Tools:</strong> LaTeX, Microsoft Office, SolidWorks</li>
+      </ul>
+    </section>
+
+    <!-- Research Experience -->
+    <section id="research">
+      <h2>Research Experience</h2>
+
+      <article>
+        <h3>Oct 2024–May 2025 (expected)</h3>
+        <p class="role">
+          Research Project: Exploring spatial memory formation through biologically plausible spiking neural networks with online learning algorithms<br>
+          <em>Computational Neuroscience Group, Biozentrum, University of Basel</em>
+        </p>
+        <ul>
+          <li>Modeled feedforward and recurrent spiking neural networks in an agent navigating a 2D simulated environment.</li>
+          <li>Investigated the emergence of grid-cell-like activity from place cells via synaptic plasticity rules.</li>
+          <li>Applied PCA and Fourier analysis to characterize dynamics between place and grid cells.</li>
+          <li>Implemented simulations and data analysis in C and Python.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Feb 2025–Aug 2025 (expected)</h3>
+        <p class="role">
+          Research Intern: Brain-Inspired Learning in RNNs<br>
+          <em>Automation Institute (Guoqi Li Group), Chinese Academy of Sciences, Beijing</em>
+        </p>
+        <ul>
+          <li>Developed local learning update rules integrated into linear attention mechanisms within RNNs.</li>
+          <li>Implemented a context-dependent linear attention module for dynamic focus adjustment.</li>
+          <li>Evaluated performance on synthetic time-series and real-world datasets.</li>
+          <li>Benchmarking against global backpropagation baselines.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Dec 2023–Jul 2024</h3>
+        <p class="role">
+          Research Assistant: Large-Field-of-View Light-Field Microscopy<br>
+          <em>Biomedical Photonics Lab, Tsinghua University, Beijing</em>
+        </p>
+        <ul>
+          <li>Developed computational imaging pipelines for extended field-of-view light-field microscopy.</li>
+          <li>Implemented 3D reconstruction algorithms and post-processing workflows.</li>
+          <li>Optimized MATLAB scripts for high-performance volumetric data processing.</li>
+          <li>Collaborated with experimental teams to validate models with microscopy data.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Sep 2024–Jun 2025 (expected)</h3>
+        <p class="role">
+          Remote Research Assistant: Bio-Inspired Algorithms<br>
+          <em>Computer Science Dept., University of Birmingham, UK</em>
+        </p>
+        <ul>
+          <li>Designed algorithms combining evolutionary computation and reinforcement learning.</li>
+          <li>Developed novel fitness evaluation and policy update mechanisms.</li>
+          <li>Prototyped in Python using standard ML libraries and custom frameworks.</li>
+          <li>Conducted performance benchmarks on synthetic and real datasets.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>May 2021–May 2022</h3>
+        <p class="role">
+          Research Intern: Second Harmonic Generation in Graphene<br>
+          <em>CIOMP, Chinese Academy of Sciences, Changchun</em>
+        </p>
+        <ul>
+          <li>Co-first author on “Study on the second harmonic generation mechanism in few-layer graphene.”</li>
+          <li>Performed first-principles electronic structure calculations of bilayer and trilayer graphene.</li>
+          <li>Analyzed band structures, conductivity orders, and polarization parameters.</li>
+          <li>Wrote MATLAB code to process and visualize nonlinear optical response data.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>2019–2020 – Jilin University Scholarship</li>
+        <li>2022 – Innovation & Practice Training Program Award, University of Chinese Academy of Sciences</li>
+      </ul>
+    </section>
+
+    <!-- References -->
+    <section id="references">
+      <h2>References</h2>
+      <ul>
+        <li>Prof. Lingjie Kong – Supervisor, Biomedical Photonics Lab, Tsinghua University | <a href="mailto:KONGLJ@tsinghua.edu.cn">KONGLJ@tsinghua.edu.cn</a></li>
+        <li>Prof. Jinluo Cheng – Supervisor, CIOMP, Chinese Academy of Sciences | <a href="mailto:jlcheng@ciomp.ac.cn">jlcheng@ciomp.ac.cn</a></li>
+        <li>Dr. Everton Joao Agnes – Project Leader, Computational Neuroscience Group, University of Basel | <a href="mailto:everton.agnes@unibas.ch">everton.agnes@unibas.ch</a></li>
       </ul>
     </section>
   </main>
+
   <footer>
-    <p>© 2025 Alice</p>
+    <p>© 2025 Yixin Chen</p>
   </footer>
 </body>
 </html>
