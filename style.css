@@ -54,21 +54,23 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Profile Photo */
+/* Profile Photo: fixed small size, preserves aspect ratio */
 .profile-photo {
   float: right;
-  width: 50px;
-  height: 50px;
+  width: 120px;      /* adjust this */
+  height: auto;      /* let height scale automatically */
   object-fit: cover;
   border-radius: 50%;
   margin: 0 0 1rem 1rem;
 }
 
-/* Background for Recent Activities */
+/* Recent-Activities Background: cover but limited height */
 .bg-activities {
   background: url('background.jpg') center/cover no-repeat;
   padding: 2rem;
   border-radius: 8px;
+  /* optional: force section to at least 300px tall */
+  min-height: 300px;
   color: #fff;
 }
 .bg-activities h2,
