@@ -57,7 +57,7 @@ body {
 /* Profile Photo: fixed small size, preserves aspect ratio */
 .profile-photo {
   float: right;
-  width: 120px;      /* adjust this */
+  width: 360px;      /* adjust this */
   height: auto;      /* let height scale automatically */
   object-fit: cover;
   border-radius: 50%;
