@@ -54,14 +54,16 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Profile Photo: fixed small size, preserves aspect ratio */
+/* Profile Photo: centered and 50% of main area */
 .profile-photo {
-  float: right;
-  width: 180px;      /* adjust this */
-  height: auto;      /* let height scale automatically */
+  display: block;          /* treat as block element */
+  width: 50%;              /* half the width of its container */
+  max-width: 300px;        /* optional cap so it doesn’t get too huge */
+  height: auto;            /* maintain aspect ratio */
   object-fit: cover;
   border-radius: 50%;
-  margin: 0 0 1rem 1rem;
+  margin: 0 auto 1.5rem;   /* auto left/right to center, plus bottom spacing */
+  float: none;             /* remove any float */
 }
 
 /* Recent-Activities Background: cover but limited height */
